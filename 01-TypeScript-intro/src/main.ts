@@ -3,6 +3,9 @@ import typescriptLogo from './typescript.svg'
 import viteLogo from '/vite.svg'
 import { setupCounter } from './counter.ts'
 
+// import { name, age } from "./bases/01-types.ts";
+// import { bulbasaur, pokemons } from "./bases/02-objects.ts";
+
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
     <a href="https://vitejs.dev" target="_blank">
@@ -19,6 +22,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
       Click on the Vite and TypeScript logos to learn more
     </p>
   </div>
+
 `
 
 setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
