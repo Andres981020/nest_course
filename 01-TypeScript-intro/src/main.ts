@@ -2,9 +2,12 @@ import './style.css'
 import typescriptLogo from './typescript.svg'
 import viteLogo from '/vite.svg'
 import { setupCounter } from './counter.ts'
+import { charmander } from './bases/02-objects.ts'
 
 // import { name, age } from "./bases/01-types.ts";
 // import { bulbasaur, pokemons } from "./bases/02-objects.ts";
+
+
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
@@ -21,6 +24,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     <p class="read-the-docs">
       Click on the Vite and TypeScript logos to learn more
     </p>
+    <h1>${ charmander.name }</h1>
   </div>
 
 `
